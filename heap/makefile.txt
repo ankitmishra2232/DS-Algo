@@ -1,0 +1,6 @@
+run: 2125_main.o 2125_heap.o
+	gcc -o run 2125_main.o 2125_heap.o
+main.o: 2125_main.c 2125_heap.h
+	gcc -c 2125_main.c
+heap.o: 2125_heap.c 2125_heap.h
+	gcc -c 2125_heap.c

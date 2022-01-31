@@ -1,0 +1,6 @@
+run: 2125_postfix.o 2125_stack.o
+	gcc -o run 2125_postfix.o 2125_stack.o
+2125_postfix.o: 2125_postfix.c 2125_stack.h
+	gcc -c 2125_postfix.c
+2125_stack.o: 2125_stack.c 2125_stack.h 
+	gcc -c 2125_stack.c

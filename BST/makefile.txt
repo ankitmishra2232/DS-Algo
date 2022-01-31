@@ -1,0 +1,6 @@
+run: 2125_main.o 2125_bst.o
+	gcc -o run 2125_main.o 2125_bst.o
+main.o: 2125_main.c 2125_.h
+	gcc -c 2125_main.c
+stack.o: 2125_bst.c 2125_bst.h
+	gcc -c 2125_bst.c

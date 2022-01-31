@@ -1,0 +1,6 @@
+run: 2125_graph_main.o 2125_graph.o 2125_stack.o 2125_queue.o
+	gcc -o run 2125_graph_main.o 2125_graph.o 2125_stack.o 2125_queue.o
+2125_graph_main.o: 2125_graph_main.c 2125_graph.h 2125_stack.h 2125_queue.h
+	gcc -c 2125_graph_main.c
+graph.o: 2125_graph.c 2125_graph.h 2125_stack.c 2125_stack.h 2125_queue.c 2125_queue.h
+	gcc -c 2125_graph.c 2125_stack.c 2125_queue.c
